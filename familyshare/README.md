@@ -1,6 +1,7 @@
 **README**
 
 *Planning*
+
 User Stories - [Trello Board](https://trello.com/b/XjxnzU32/family-website)
 
 Database Schema - added to docs folder
