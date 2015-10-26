@@ -6,7 +6,7 @@
 6. Generate Address controller and routes: rails g controller Addresses index new edit show create update
 7. Create database: be rake db:create db:migrate
 8. Run server: rails s
-9. Add boostrap to application.html.erb: 
+9. Add bootstrap to application.html.erb: 
   - Add the following below the turbolinks tag:
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -14,4 +14,6 @@
   - Wrap yield in container div
   - Add navbar and footer
   - Add styling to app/assets/stylesheets/application.css
-10. 
+10. Add carrierwave to gemfile :gem 'carrierwave'
+11. Bundle install
+12. 
