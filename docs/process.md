@@ -16,4 +16,12 @@
   - Add styling to app/assets/stylesheets/application.css
 10. Add carrierwave to gemfile :gem 'carrierwave'
 11. Bundle install
-12. 
+12. Add devise gem to gemfile: gem 'devise'
+13. Bundle install
+14. Generate devise: rails g devise:install
+15. Add action mailer default url options to config/environments/development.rb: config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+16. Add notice actions (alerts) to application.html.erb
+17. Setup User model: rails g devise user
+18. Add sign-up and login links to application.html.erb
+19. Add authentication to each page in app/controllers/application_controller.rb: before_action :authenticate_user!
+20. Create static home page: rails generate controller pages home
