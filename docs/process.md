@@ -25,3 +25,8 @@
 18. Add sign-up and login links to application.html.erb
 19. Add authentication to each page in app/controllers/application_controller.rb: before_action :authenticate_user!
 20. Create static home page: rails generate controller pages home
+21. Generate devise views: rails generate devise:views
+22. Generate Personal Info model & migration: rails g model personal_info first_name:string middle_name:string maiden_name:string last_name:string birthday:date gender:integer
+23. Add association to Personal Info migration
+24. Generate Personal Info controller and routes: rails g controller personal_info index new edit show create update
+
