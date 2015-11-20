@@ -4,18 +4,13 @@ Rails.application.routes.draw do
 
   get 'pages/home'
 
-  devise_for :users
-  get 'addresses/index'
+  devise_for :users, controllers: { registrations: "registrations" } 
 
-  get 'addresses/new'
+  resources :users, :only => :none do
+    resources :profiles
+  end
 
-  get 'addresses/edit'
-
-  get 'addresses/show'
-
-  get 'addresses/create'
-
-  get 'addresses/update'
+  resources :addresses
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

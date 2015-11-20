@@ -7,6 +7,7 @@ class CreateAddresses < ActiveRecord::Migration
       t.integer :state
       t.integer :zip
       t.integer :type
+      t.belongs_to :user, index:true
 
       t.timestamps null: false
     end
